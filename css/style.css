@@ -1,5 +1,11 @@
 @import "reset.css";
+@import "weapons.css";
+@import "items.css";
+@import "quotes.css";
 
+.hidden {
+    display: none;
+}
 
 .main-box {
     justify-content: center;
@@ -20,8 +26,17 @@
     margin: 5px 0px;
 }
 
+.location div:nth-child(2){
+    position:absolute;
+}
+
 #random-bg img{
     width: 1040px;
+    height: 540px;
+}
+
+#target-img img{
+    width: 500px;
     height: 540px;
 }
 
@@ -34,35 +49,23 @@
     height: 30px;
 }
 
-.area-box-size,
-.todolist-bg,
-.weapons-box-size,
-.items-box-size,
-.targets-box-size {
+.weapons-box,
+.items-box,
+.targets-box,
+.todolist-bg {
     width: 1040px;
     height: 540px;
     border: 1px solid black;
 }
 
-.todolist-bg,
-.weapons-box-size,
-.items-box-size,
-.targets-box-size {
-    display: none;
-}
-
-.todolist-box-size{
+.tg-box {
     display: flex;
-    flex-direction: column;
-    align-items: center;
 }
-
 
 .middle-box {
     display: flex;
     justify-content: center;
 }
-
 
 .btns {
     display: flex;
@@ -77,21 +80,6 @@
     margin-left: 10px;
 }
 
-.quotes-box {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.quote{
-    display: flex;
-    justify-content: center;
-    width: 800px;
-    height: 100px;
-    border: 1px solid black;
-}
-
-
 .btn {
 	margin: 0;
 	padding: 0;
@@ -99,10 +87,3 @@
 	color: black;
 	border: 1px solid black;
 }
-
-
-.hidden {
-    display: none;
-    visibility: none;
-    z-index: 0;
-} 

@@ -1,5 +1,3 @@
-const HIDDEN_KEY = "hidden";
-
 const todo = document.querySelector("#todo-btn");
 const weapons = document.querySelector("#weapons-btn");
 const items = document.querySelector("#items-btn");
@@ -7,101 +5,170 @@ const targets = document.querySelector("#targets-btn");
 const area = document.querySelector("#area-btn");
 
 /* 화면 5개 */
-const areaBg = document.querySelector("#random-bg");
+const areaBg = document.querySelector(".background-box-bg");
 const todolistBg = document.querySelector(".todolist-bg");
 const weaponsBg = document.querySelector(".weapons-box");
 const itemsBg = document.querySelector(".items-box");
 const targetsBg = document.querySelector(".targets-box");
 
-/* function btnHandler() {
-    randomBg.classList.add(HIDDEN_KEY);
-    todolistBg.classList.remove(HIDDEN_KEY);
-} */
-
 function showTodo() {
-    todolistBg.style.display ="";
+    if(todolistBg.classList.contains("hidden")){
+        todolistBg.classList.remove("hidden")
+    } else {
+        console.log(todolistBg);
+    }
 
-    if(weaponsBg.style.display !== "none") {
-        weaponsBg.style.display = "none";
+    if(areaBg.classList.contains("hidden")){
+        console.log(areaBg);
+    } else {
+        areaBg.classList.add("hidden");
     }
-    if(itemsBg.style.display !== "none") {
-        itemsBg.style.display ="none";
+
+    if(weaponsBg.classList.contains("hidden")){
+        console.log(weaponsBg);
+    } else {
+        weaponsBg.classList.add("hidden");
     }
-    if(targetsBg.style.display !== "none") {
-        targetsBg.style.display ="none";
+
+    if(itemsBg.classList.contains("hidden")){
+        console.log(itemsBg);
+    } else {
+        itemsBg.classList.add("hidden");
     }
-    if(areaBg.style.display !== "none") {
-        areaBg.style.display ="none";
+
+    if(targetsBg.classList.contains("hidden")){
+        console.log(targetsBg);
+    } else {
+        targetsBg.classList.add("hidden");
     }
 }
 
 function showWeapons() {
-    weaponsBg.style.display = "";
+    if(weaponsBg.classList.contains("hidden")){
+        weaponsBg.classList.remove("hidden")
+    } else {
+        console.log(areaBg);
+    }
 
-    if(todolistBg.style.display !== "none") {
-        todolistBg.style.display = "none";
+    if(areaBg.classList.contains("hidden")){
+        console.log(areaBg);
+    } else {
+        areaBg.classList.add("hidden");
     }
-    if(itemsBg.style.display !== "none") {
-        itemsBg.style.display ="none";
+
+    if(todolistBg.classList.contains("hidden")){
+        console.log(todolistBg);
+    } else {
+        todolistBg.classList.add("hidden");
     }
-    if(targetsBg.style.display !== "none") {
-        targetsBg.style.display ="none";
+
+    if(itemsBg.classList.contains("hidden")){
+        console.log(itemsBg);
+    } else {
+        itemsBg.classList.add("hidden");
     }
-    if(areaBg.style.display !== "none") {
-        areaBg.style.display ="none";
+
+    if(targetsBg.classList.contains("hidden")){
+        console.log(targetsBg);
+    } else {
+        targetsBg.classList.add("hidden");
     }
 }
 
 function showItems() {
-    itemsBg.style.display = "";
+    if(itemsBg.classList.contains("hidden")){
+        itemsBg.classList.remove("hidden")
+    } else {
+        console.log(areaBg);
+    }
+    
+    if(areaBg.classList.contains("hidden")){
+        console.log(areaBg);
+    } else {
+        areaBg.classList.add("hidden");
+    }
 
-    if(todolistBg.style.display !== "none") {
-        todolistBg.style.display = "none";
+    if(todolistBg.classList.contains("hidden")){
+        console.log(todolistBg);
+    } else {
+        todolistBg.classList.add("hidden");
     }
-    if(weaponsBg.style.display !== "none") {
-        weaponsBg.style.display = "none";
+
+    if(weaponsBg.classList.contains("hidden")){
+        console.log(weaponsBg);
+    } else {
+        weaponsBg.classList.add("hidden");
     }
-    if(targetsBg.style.display !== "none") {
-        targetsBg.style.display ="none";
-    }
-    if(areaBg.style.display !== "none") {
-        areaBg.style.display ="none";
+
+    if(targetsBg.classList.contains("hidden")){
+        console.log(targetsBg);
+    } else {
+        targetsBg.classList.add("hidden");
     }
 }
 
 function showTargets() {
-    targetsBg.style.display = "";
+    if(targetsBg.classList.contains("hidden")){
+        targetsBg.classList.remove("hidden")
+    } else {
+        console.log(areaBg);
+    }
+    
+    if(areaBg.classList.contains("hidden")){
+        console.log(areaBg);
+    } else {
+        areaBg.classList.add("hidden");
+    }
 
-    if(todolistBg.style.display !== "none") {
-        todolistBg.style.display = "none";
+    if(todolistBg.classList.contains("hidden")){
+        console.log(todolistBg);
+    } else {
+        todolistBg.classList.add("hidden");
     }
-    if(weaponsBg.style.display !== "none") {
-        weaponsBg.style.display = "none";
+
+    if(weaponsBg.classList.contains("hidden")){
+        console.log(weaponsBg);
+    } else {
+        weaponsBg.classList.add("hidden");
     }
-    if(itemsBg.style.display !== "none") {
-        itemsBg.style.display ="none";
-    }
-    if(areaBg.style.display !== "none") {
-        areaBg.style.display ="none";
+
+    if(itemsBg.classList.contains("hidden")){
+        console.log(itemsBg);
+    } else {
+        itemsBg.classList.add("hidden");
     }
 }
 
 function showArea() {
-    areaBg.style.display = "";
-
-    if(todolistBg.style.display !== "none") {
-        todolistBg.style.display = "none";
-    }
-    if(weaponsBg.style.display !== "none") {
-        weaponsBg.style.display ="none";
-    }
-    if(itemsBg.style.display !== "none") {
-        itemsBg.style.display ="none";
-    }
-    if(targetsBg.style.display !== "none") {
-        targetsBg.style.display ="none";
+    if(areaBg.classList.contains("hidden")){
+        areaBg.classList.remove("hidden")
+    } else {
+        console.log(areaBg);
     }
 
+    if(todolistBg.classList.contains("hidden")){
+        console.log(todolistBg);
+    } else {
+        todolistBg.classList.add("hidden");
+    }
+
+    if(weaponsBg.classList.contains("hidden")){
+        console.log(weaponsBg);
+    } else {
+        weaponsBg.classList.add("hidden");
+    }
+
+    if(itemsBg.classList.contains("hidden")){
+        console.log(itemsBg);
+    } else {
+        itemsBg.classList.add("hidden");
+    }
+
+    if(targetsBg.classList.contains("hidden")){
+        console.log(targetsBg);
+    } else {
+        targetsBg.classList.add("hidden");
+    }
 }
 
 todo.addEventListener("click", showTodo);

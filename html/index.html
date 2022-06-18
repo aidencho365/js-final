@@ -14,7 +14,7 @@
         </div>
         <div>
             <div class="location">
-                <div><span id="w-info">Operational Area</span></div>
+                <div><span id="w-info">Location</span></div>
                 <div><span id="w-info">Weather</span></div>
                 <div><span id="w-info">Temp</span></div>
             </div>
@@ -31,41 +31,104 @@
                     </div>
                 </div>
             </div>
-            <div class="todolist-bg">
-                <div class=todolist-box-size>
-                    <div>
-                        <span>To Do List</span>
-                    </div>
-                    <div>
-                        <form id="todo-form">
-                            <input id="todo-form-input" type="text" placeholder="Write a To Do and press Enter" required />
-                        </form>
-                    </div>
-                    <div>
-                        <ul id="todo-list">
-                        </ul>
-                    </div>
+            <div class="todolist-bg hidden">
+                <span>To Do List</span>
+                <form id="todo-form">
+                    <input id="todo-form-input" type="text" placeholder="Write a To Do and press Enter" required />
+                </form>
+                <ul id="todo-list">
+                </ul>
+            </div>
+            <div class="weapons-box hidden">
+                <div class="weapons-top">
+                    <div class="weapons-icons"><img src="../img_weapons/aar.png" /><div>Auto Rifle<input type="radio" /></div></div>
+                    <div class="weapons-icons"><img src="../img_weapons/smg.png" /><div>Submachine Gun<input type="radio" /></div></div>
+                    <div class="weapons-icons"><img src="../img_weapons/rpg.png" /><div>Rocket Runcher<input type="radio" /></div></div>
+                    <div class="weapons-icons"><img src="../img_weapons/pistol.png" /><div>Pistol<input type="radio" /></div></div>
+                </div>
+                <div class="weapons-top">
+                    <div class="weapons-icons"><img src="../img_weapons/sr.png" /><div>Sniper Rifle<input type="radio" /></div></div>
+                    <div class="weapons-icons"><img src="../img_weapons/mg.png" /><div>Machine Gun<input type="radio" /></div></div>
+                    <div class="weapons-icons"><img src="../img_weapons/bow.png" /><div>Crossbow<input type="radio" /></div></div>
+                    <div class="weapons-icons"><img src="../img_weapons/knife.png" /><div>Knife<input type="radio" /></div></div>
                 </div>
             </div>
-            <div class="weapons-box">
-                <div class="weapons-box-size">
-                    <div></div>
+            <div class="items-box hidden">
+                <div class="items-top">
+                    <div class="items-icons"><img src="../img_items/body.png" /><div>Armor<input type="radio" /></div></div>
+                    <div class="items-icons"><img src="../img_items/c4.png" /><div>C4<input type="radio" /></div></div>
+                    <div class="items-icons"><img src="../img_items/flashbang.png" /><div>Flashbang<input type="radio" /></div></div>
+                    <div class="items-icons"><img src="../img_items/grenade.png" /><div>Grenade<input type="radio" /></div></div>
+                </div>
+                <div class="items-top">
+                    <div class="items-icons"><img src="../img_items/land-mine.png" /><div>Digital Map<input type="radio" /></div></div>
+                    <div class="items-icons"><img src="../img_items/missile.png" /><div>Drone<input type="radio" /></div></div>
+                    <div class="items-icons"><img src="../img_items/shield.png" /><div>Escape Kit<input type="radio" /></div></div>
+                    <div class="items-icons"><img src="../img_items/turret.png" /><div>Mortar<input type="radio" /></div></div>
                 </div>
             </div>
-            <div class="items-box">
-                <div class="items-box-size">
-                    <div></div>
-                </div>
-            </div>
-            <div class="targets-box">
-                <div class="targets-box-size">
-                    <div></div>
+            <div class="targets-box hidden">
+                <div class="tg-box">
+                    <div>
+                        <div id="target-img">
+                        </div>
+                    </div>
+                    <div class="tg-all-box">
+                        <div class="tg-size-box">
+                            <div class="tg-title">
+                                <span>Mission</span>
+                            </div>
+                            <div class="tg-size">
+                                <span id="tg-mission"></span>
+                            </div>
+                        </div>
+                        <div class="tg-size-box">
+                            <div class="tg-title">
+                                <span>Name</span>
+                            </div>
+                            <div class="tg-size">
+                                <span id="tg-name"></span>
+                            </div>
+                        </div>
+                        <div class="tg-size-box">
+                            <div class="tg-title">
+                                <span>Affiliation</span>
+                            </div>
+                            <div class="tg-size">
+                                <span id="tg-affiliation"></span>
+                            </div>
+                        </div>
+                        <div class="tg-size-box">
+                            <div class="tg-title">
+                                <span>Birth</span>
+                            </div>
+                            <div class="tg-size">
+                                <span id="tg-age"></span>
+                            </div>
+                        </div>
+                        <div class="tg-size-box">
+                            <div class="tg-title">
+                                <span>H&W</span>
+                            </div>
+                            <div class="tg-size">
+                                <span id="tg-body"></span>
+                            </div>
+                        </div>
+                        <div class="tg-size-box">
+                            <div class="tg-title">
+                                <span>Etc</span>
+                            </div>
+                            <div class="tg-size">
+                                <span id="tg-etc"></span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="btns">
                 <button id="todo-btn">To do</button>
                 <button id="weapons-btn">Weapons</button>
-                <button id="items-btn">Equipments</button>
+                <button id="items-btn">Items</button>
                 <button id="targets-btn">Target</button>
                 <button id="area-btn">Area</button>
             </div>
@@ -73,9 +136,9 @@
 
         <div class="quotes-box">
             <div class="quote">
-                <div><span id="qb-quote"></span></div>
-                <div><span>/</span></div>
-                <div><span id="qb-author"></span></div>
+                <div class="quote-size"><span id="qb-quote"></span></div>
+                <div class="quote-size"><span id="qb-quote-eng"></span></div>
+                <div class="quote-size"><span id="qb-author"></span></div>
             </div>
         </div>
     </div>
