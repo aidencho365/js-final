@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-box">
+        <div class="clock-box">
+            <h2 id="clock">hh:mm:ss</h2>
+        </div>
+        <div>
+            <div class="location">
+                <div><span id="w-info">Operational Area</span></div>
+                <div><span id="w-info">Weather</span></div>
+                <div><span id="w-info">Temp</span></div>
+            </div>
+            <div class="location">
+                <div><span id="w-city"></span></div>
+                <div><span id="w-weather"></span></div>
+                <div><span id="w-temp"></span></div>
+            </div>
+        </div>
+        <div class="middle-box">
+            <div class="background-box-bg">
+                <div class="area-box-size">
+                    <div id="random-bg">
+                    </div>
+                </div>
+            </div>
+            <div class="todolist-bg">
+                <div class=todolist-box-size>
+                    <div>
+                        <span>To Do List</span>
+                    </div>
+                    <div>
+                        <form id="todo-form">
+                            <input id="todo-form-input" type="text" placeholder="Write a To Do and press Enter" required />
+                        </form>
+                    </div>
+                    <div>
+                        <ul id="todo-list">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="weapons-box">
+                <div class="weapons-box-size">
+                    <div></div>
+                </div>
+            </div>
+            <div class="items-box">
+                <div class="items-box-size">
+                    <div></div>
+                </div>
+            </div>
+            <div class="targets-box">
+                <div class="targets-box-size">
+                    <div></div>
+                </div>
+            </div>
+            <div class="btns">
+                <button id="todo-btn">To do</button>
+                <button id="weapons-btn">Weapons</button>
+                <button id="items-btn">Equipments</button>
+                <button id="targets-btn">Target</button>
+                <button id="area-btn">Area</button>
+            </div>
+        </div>
+
+        <div class="quotes-box">
+            <div class="quote">
+                <div><span id="qb-quote"></span></div>
+                <div><span>/</span></div>
+                <div><span id="qb-author"></span></div>
+            </div>
+        </div>
+    </div>
+</body>
+    <script src="../js/clock.js"></script>
+    <script src="../js/todo.js"></script>
+    <script src="../js/weather.js"></script>
+    <script src="../js/background.js"></script>
+    <script src="../js/quotes.js"></script>
+    <script src="../js/button.js"></script>
+    <script src="https://kit.fontawesome.com/2567d7c29b.js" crossorigin="anonymous"></script>
+</html>
