@@ -13,31 +13,31 @@ const targetsBg = document.querySelector(".targets-box");
 
 function showTodo() {
     if(todolistBg.classList.contains("hidden")){
-        todolistBg.classList.remove("hidden")
+        todolistBg.classList.remove("hidden");
     } else {
-        console.log(todolistBg);
+
     }
 
     if(areaBg.classList.contains("hidden")){
-        console.log(areaBg);
+
     } else {
         areaBg.classList.add("hidden");
     }
 
     if(weaponsBg.classList.contains("hidden")){
-        console.log(weaponsBg);
+
     } else {
         weaponsBg.classList.add("hidden");
     }
 
     if(itemsBg.classList.contains("hidden")){
-        console.log(itemsBg);
+
     } else {
         itemsBg.classList.add("hidden");
     }
 
     if(targetsBg.classList.contains("hidden")){
-        console.log(targetsBg);
+
     } else {
         targetsBg.classList.add("hidden");
     }
@@ -47,29 +47,29 @@ function showWeapons() {
     if(weaponsBg.classList.contains("hidden")){
         weaponsBg.classList.remove("hidden")
     } else {
-        console.log(areaBg);
+
     }
 
     if(areaBg.classList.contains("hidden")){
-        console.log(areaBg);
+
     } else {
         areaBg.classList.add("hidden");
     }
 
     if(todolistBg.classList.contains("hidden")){
-        console.log(todolistBg);
+
     } else {
         todolistBg.classList.add("hidden");
     }
 
     if(itemsBg.classList.contains("hidden")){
-        console.log(itemsBg);
+
     } else {
         itemsBg.classList.add("hidden");
     }
 
     if(targetsBg.classList.contains("hidden")){
-        console.log(targetsBg);
+
     } else {
         targetsBg.classList.add("hidden");
     }
@@ -79,29 +79,29 @@ function showItems() {
     if(itemsBg.classList.contains("hidden")){
         itemsBg.classList.remove("hidden")
     } else {
-        console.log(areaBg);
+
     }
     
     if(areaBg.classList.contains("hidden")){
-        console.log(areaBg);
+
     } else {
         areaBg.classList.add("hidden");
     }
 
     if(todolistBg.classList.contains("hidden")){
-        console.log(todolistBg);
+
     } else {
         todolistBg.classList.add("hidden");
     }
 
     if(weaponsBg.classList.contains("hidden")){
-        console.log(weaponsBg);
+
     } else {
         weaponsBg.classList.add("hidden");
     }
 
     if(targetsBg.classList.contains("hidden")){
-        console.log(targetsBg);
+
     } else {
         targetsBg.classList.add("hidden");
     }
@@ -111,29 +111,29 @@ function showTargets() {
     if(targetsBg.classList.contains("hidden")){
         targetsBg.classList.remove("hidden")
     } else {
-        console.log(areaBg);
+
     }
     
     if(areaBg.classList.contains("hidden")){
-        console.log(areaBg);
+
     } else {
         areaBg.classList.add("hidden");
     }
 
     if(todolistBg.classList.contains("hidden")){
-        console.log(todolistBg);
+
     } else {
         todolistBg.classList.add("hidden");
     }
 
     if(weaponsBg.classList.contains("hidden")){
-        console.log(weaponsBg);
+
     } else {
         weaponsBg.classList.add("hidden");
     }
 
     if(itemsBg.classList.contains("hidden")){
-        console.log(itemsBg);
+
     } else {
         itemsBg.classList.add("hidden");
     }
@@ -143,29 +143,29 @@ function showArea() {
     if(areaBg.classList.contains("hidden")){
         areaBg.classList.remove("hidden")
     } else {
-        console.log(areaBg);
+
     }
 
     if(todolistBg.classList.contains("hidden")){
-        console.log(todolistBg);
+
     } else {
         todolistBg.classList.add("hidden");
     }
 
     if(weaponsBg.classList.contains("hidden")){
-        console.log(weaponsBg);
+
     } else {
         weaponsBg.classList.add("hidden");
     }
 
     if(itemsBg.classList.contains("hidden")){
-        console.log(itemsBg);
+
     } else {
         itemsBg.classList.add("hidden");
     }
 
     if(targetsBg.classList.contains("hidden")){
-        console.log(targetsBg);
+
     } else {
         targetsBg.classList.add("hidden");
     }

@@ -21,7 +21,6 @@ const targetsss = [
 ]
 
 const chosenTarget = targetsss[Math.floor(Math.random() * targetsss.length)];
-console.log(chosenTarget);
 
 const targetImage = document.createElement("img");
 
@@ -93,7 +92,7 @@ const tgAge = document.querySelector("#tg-age");
 const tgBody = document.querySelector("#tg-body");
 const tgEtc = document.querySelector("#tg-etc");
 
-console.log(chosenTarget.substring(0,1));
+
 const chosenTargetInfo = targetsssInfo[(parseInt(chosenTarget.substring(0,1))-1)];
 
 tgMission.innerText = chosenTargetInfo.mission;

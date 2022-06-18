@@ -7,6 +7,10 @@
     display: none;
 }
 
+.activated {
+    color: greenyellow;
+}
+
 .main-box {
     justify-content: center;
     align-items: center;
@@ -70,7 +74,6 @@
 .btns {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 .btns div {
@@ -86,4 +89,12 @@
 	background-color: transparent;
 	color: black;
 	border: 1px solid black;
+}
+
+#todo-btn,
+#weapons-btn,
+#items-btn,
+#targets-btn,
+#area-btn {
+    height:108px;
 }
