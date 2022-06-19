@@ -318,6 +318,7 @@ body {
 #area-btn:hover {
     background-color: rgb(37, 54, 2);
     animation: btnHover 1.5s infinite;
+    cursor: pointer;
 }
 
 @keyframes btnHover {
@@ -381,6 +382,7 @@ body {
 .mbs-btn button{
     background-color: black;
     color:rgb(96, 192, 18);
+    cursor: pointer;
 }
 
 #music-singer {
@@ -462,6 +464,10 @@ body {
 
 #lbi-submit{
     animation: comeOn 2s infinite;
+}
+
+#lbi-submit:hover{
+    cursor:pointer;
 }
 
 @keyframes comeOn {
