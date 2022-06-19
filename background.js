@@ -8,7 +8,7 @@ const chosenImage = images[Math.floor(Math.random() * images.length)];
 
 const bgImage = document.createElement("img");
 
-bgImage.src=`../img/${chosenImage}`;
+bgImage.src=`img/${chosenImage}`;
 
 const bg = document.querySelector("#random-bg");
 
@@ -26,7 +26,7 @@ const chosenTarget = targetsss[Math.floor(Math.random() * targetsss.length)];
 
 const targetImage = document.createElement("img");
 
-targetImage.src=`../img_targets/${chosenTarget}`;
+targetImage.src=`img_targets/${chosenTarget}`;
 
 const tgImage = document.querySelector("#target-img");
 

@@ -30,7 +30,7 @@ const chosenSinger = chosenBgm.singer;
 const chosenNameofsong = chosenBgm.nameofsong;
 
 function choseBgm(){
-    bgm.setAttribute('src', `../bgm/${chosenSong}`);
+    bgm.setAttribute('src', `bgm/${chosenSong}`);
     console.log(chosenBgm);
     musicSinger.innerText = chosenSinger;
     musicTitle.innerText = chosenNameofsong;
