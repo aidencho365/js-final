@@ -18,7 +18,7 @@ function paintToDo(newTodo) {
     button.innerText = "X";
     button.addEventListener("click", deleteToDo);
 
-    li.appendChild(span); /* span을 li의 자식으로 넣어버림 <li><span></span></li> 이렇게 */
+    li.appendChild(span); /* div을 li의 자식으로 넣어버림 <li><span></span></li> 이렇게 */
     li.appendChild(button);
     toDoList.appendChild(li);
 }

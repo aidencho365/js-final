@@ -16,9 +16,22 @@
     justify-content: center;
     align-items: center;
     margin: 5px 15px 5px 15px;
+    color: white;
+    font-size: 20px;
 }
 
 .weapons-icons img{
     width: 200px;
     height: 200px;
+}
+
+.weapons-icons img:hover {
+    will-change: transform;
+    animation: weaponsIconsAni 3s ease-in-out infinite;
+}
+
+@keyframes weaponsIconsAni {
+    100%{
+        transform: rotate(360deg);
+    }
 }
