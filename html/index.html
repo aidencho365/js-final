@@ -12,7 +12,7 @@
         <div class="clock-box">
             <h2 id="clock">hh:mm:ss</h2>
         </div>
-        <div>
+        <div class="location-box">
             <div class="location">
                 <div><span id="w-info">Location</span></div>
                 <div><span id="w-info">Weather</span></div>
@@ -24,9 +24,12 @@
                 <div><span id="w-temp"></span></div>
             </div>
         </div>
+
         <div class="middle-box">
             <div class="background-box-bg">
                 <div class="area-box-size">
+                    <div id="random-bg-title">
+                    </div>
                     <div id="random-bg">
                     </div>
                 </div>
@@ -108,7 +111,7 @@
                         </div>
                         <div class="tg-size-box">
                             <div class="tg-title">
-                                <span>H&W</span>
+                                <span>Height<br>&<br>Weight</span>
                             </div>
                             <div class="tg-size">
                                 <span id="tg-body"></span>
@@ -126,11 +129,11 @@
                 </div>
             </div>
             <div class="btns">
-                <button id="todo-btn">To do</button>
-                <button id="weapons-btn">Weapons</button>
-                <button id="items-btn">Items</button>
-                <button id="targets-btn">Target</button>
-                <button id="area-btn">Area</button>
+                <button id="todo-btn"><span>To do</span></button>
+                <button id="weapons-btn"><span>Weapons</span></button>
+                <button id="items-btn"><span>Items</span></button>
+                <button id="targets-btn"><span>Target</span></button>
+                <button id="area-btn"><span>Area</span></button>
             </div>
         </div>
 
@@ -139,6 +142,9 @@
                 <div class="quote-size"><span id="qb-quote"></span></div>
                 <div class="quote-size"><span id="qb-quote-eng"></span></div>
                 <div class="quote-size"><span id="qb-author"></span></div>
+            </div>
+            <div class="music-box">
+
             </div>
         </div>
     </div>
@@ -149,5 +155,6 @@
     <script src="../js/background.js"></script>
     <script src="../js/quotes.js"></script>
     <script src="../js/button.js"></script>
+    <script src="../js/buttoneffect.js"></script>
     <script src="https://kit.fontawesome.com/2567d7c29b.js" crossorigin="anonymous"></script>
 </html>

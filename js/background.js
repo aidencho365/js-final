@@ -1,7 +1,7 @@
 /* 작전 지역 출력 */
 
 const images = [
-    "1.jpg", "2.jpg", "3.jpg", "4.png", "5.png", "6.png", "7.png", "8.png", "9.png"
+    "1.png", "2.png", "3.png", "4.png", "5.png", "6.png", "7.png", "8.png", "9.png"
 ]
 
 const chosenImage = images[Math.floor(Math.random() * images.length)];
@@ -13,6 +13,8 @@ bgImage.src=`../img/${chosenImage}`;
 const bg = document.querySelector("#random-bg");
 
 bg.appendChild(bgImage);
+
+
 
 /* 타겟 사진 출력 */
 
@@ -30,9 +32,19 @@ const tgImage = document.querySelector("#target-img");
 
 tgImage.appendChild(targetImage);
 
+/* 지역명 출력 */
+
+const imageinfoTitle = document.querySelector("#random-bg-title");
+const imageinfo = [
+    "아타훌 / Atahul", "파이난 / Pai Nan",  "십자가의 계곡 / Cruz del Valle", "노보레프노예 / Novorepnoye", "Cass Island / 카스 아일랜드", "Hae Moo Sa / 해무사",
+    "엘 포소 / El-Pozo", "포드보스토 성 / Podvosto Castle", "다이노 랜드 / Dino Land"
+]
+
+const chosenImageinfo = imageinfo[(parseInt(chosenImage.substring(0,1))-1)];
+
+imageinfoTitle.innerText = chosenImageinfo;
 
 /* 타겟 정보 출력 */
-
 
 const targetsssInfo = [
     {
